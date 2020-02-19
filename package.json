@@ -1,0 +1,9 @@
+{
+  "name": "postgres-errors",
+  "version": "0.1.0",
+  "description": "Module to expose Postgres error type and names",
+  "main": "index.js",
+  "repository": "git@github.com:tib-tib/postgres-errors.git",
+  "author": "Thibaut Gatouillat <thibaut.gatouillat@gmail.com>",
+  "license": "MIT"
+}
