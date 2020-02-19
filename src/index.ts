@@ -292,3 +292,5 @@ const postgresErrors: PostgresError = {
   'XX001':	'DATA_CORRUPTED',
   'XX002':	'INDEX_CORRUPTED',
 };
+
+export const getErrorName = (code: PostgresErrorCode): PostgresErrorName => postgresErrors[code];
