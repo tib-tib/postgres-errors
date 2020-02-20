@@ -2,8 +2,21 @@
   "name": "pg-errors",
   "version": "0.1.1",
   "description": "Module to expose PostgreSQL error types and names",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "repository": "git@github.com:tib-tib/postgres-errors.git",
   "author": "Thibaut Gatouillat <thibaut.gatouillat@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "clean": "rimraf lib && rimraf test-results",
+    "prebuild": "yarn clean",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^3.7.5"
+  }
 }

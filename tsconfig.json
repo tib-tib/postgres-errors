@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "target": "es5",
+    "downlevelIteration": true,
+    "declaration": true,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": false,
+    "lib": ["es2017", "dom"],
+    "outDir": "./lib"
+  },
+  "exclude": [
+    "node_modules",
+    "lib"
+  ]
+}
