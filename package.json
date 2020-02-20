@@ -1,6 +1,6 @@
 {
   "name": "pg-errors",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Module to expose PostgreSQL error types and names",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
