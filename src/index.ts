@@ -294,3 +294,22 @@ const postgresErrors: PostgresError = {
 };
 
 export const getErrorName = (code: PostgresErrorCode): PostgresErrorName => postgresErrors[code];
+
+export class DatabaseError extends Error {
+  public severity?: string;
+  public code?: PostgresErrorCode;
+  public detail?: string;
+  public hint?: string;
+  public position?: string;
+  public internalPosition?: string;
+  public internalQuery?: string;
+  public where?: string;
+  public schema?: string;
+  public table?: string;
+  public column?: string;
+  public dataType?: string;
+  public constraint?: string;
+  public file?: string;
+  public line?: string;
+  public routine?: string;
+}
